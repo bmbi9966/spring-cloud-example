@@ -1,0 +1,28 @@
+spring:
+  profiles:
+    active: EurekaClient8001
+
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8000
+spring:
+  application:
+    name: EurekaClient8000
+  profiles: EurekaClient8000
+---
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 800
+spring:
+  application:
+    name: EurekaClient8001
+  profiles: EurekaClient8001
+
+
