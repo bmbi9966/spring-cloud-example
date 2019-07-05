@@ -29,8 +29,9 @@ build/
 
 ### VS Code ###
 .vscode/
-/eureka-client.iml
 /mvnw.cmd
 /mvnw
+/pom.xml
 /HELP.md
 /.mvn/
+!/pom.xml

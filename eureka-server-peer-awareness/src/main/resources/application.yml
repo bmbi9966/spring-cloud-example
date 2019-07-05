@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: peer1
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8887/eureka/,http://peer2:8888/eureka/,http://peer3:8889/eureka/
+
+---
+spring:
+  profiles: peer1
+  application:
+    name: peer1
+eureka:
+  instance:
+    hostname: peer1
+server:
+  port: 8887
+---
+spring:
+  profiles: peer2
+  application:
+    name: peer2
+eureka:
+  instance:
+    hostname: peer2
+server:
+  port: 8888
+---
+spring:
+  profiles: peer3
+  application:
+    name: peer3
+eureka:
+  instance:
+    hostname: peer3
+server:
+  port: 8889

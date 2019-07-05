@@ -15,7 +15,8 @@
     </parent>
     <modules>
         <module>eureka-server-standalone</module>
-        <module>eureka-client</module>
+        <module>eureka-client-standalone</module>
+        <module>eureka-server-peer-awareness</module>
     </modules>
 
     <properties>
