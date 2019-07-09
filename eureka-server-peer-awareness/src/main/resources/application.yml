@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: peer3
+    active: peer2
   application:
     name: ServerHA
 eureka:
