@@ -1,0 +1,14 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SpanishSoap/spring-cloud-example/config/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8887/eureka/,http://peer2:8888/eureka/,http://peer3:8889/eureka/
