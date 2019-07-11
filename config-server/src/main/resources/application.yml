@@ -3,9 +3,24 @@ server:
 spring:
   application:
     name: ConfigServer
+  profiles:
+    active: configServer
+---
+spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/SpanishSoap/spring-cloud-example.git
           search-paths: config
+  profiles: configServer
+---
+#配置子目录存储
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SpanishSoap/spring-cloud-example.git
+          search-paths:  config/SubDirectoryConfigClient/,config/SubDirectoryConfigCommon/
+  profiles: subdirectory

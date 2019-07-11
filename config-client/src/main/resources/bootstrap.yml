@@ -1,0 +1,26 @@
+server:
+  port: 8202
+spring:
+  profiles:
+    active: profilesA
+---
+spring:
+  profiles: profilesA
+  application:
+    name: ConfigClient
+  cloud:
+    config:
+      uri: http://localhost:8201/
+      label: master
+      profile: dev
+---
+spring:
+  profiles: profilesB
+  application:
+    name: ConfigClientSubDirectory
+  cloud:
+    config:
+      uri: http://localhost:8201/
+      label: master
+      profile: dev
+      name: SubDirectoryConfigCommon,SubDirectoryConfigClient
