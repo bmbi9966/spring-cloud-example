@@ -1,1 +1,2 @@
-config: I'm SubDirectoryConfigClientDev
+config: I'm ConfigClient-Dev
+config-comm: I'm ConfigClientComm-Dev
