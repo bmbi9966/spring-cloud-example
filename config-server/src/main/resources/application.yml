@@ -1,5 +1,5 @@
 server:
-  port: 8201
+  port: 8202
 spring:
   application:
     name: ConfigServer
@@ -24,3 +24,17 @@ spring:
           uri: https://github.com/SpanishSoap/spring-cloud-example.git
           search-paths:  config/SubDirectoryConfigClient/,config/SubDirectoryConfigCommon/
   profiles: subdirectory
+---
+#高可用
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/SpanishSoap/spring-cloud-example.git
+          search-paths:  config/SubDirectoryConfigClient/,config/SubDirectoryConfigCommon/
+  profiles: haConfigServer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8887/eureka/,http://peer2:8888/eureka/,http://peer3:8889/eureka/

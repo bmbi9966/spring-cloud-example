@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.friends</groupId>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-client-standalone</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>eureka-client</name>
+    <name>eureka-client-standalone</name>
     <description>Demo project for Spring Cloud</description>
     <parent>
         <groupId>org.friends</groupId>

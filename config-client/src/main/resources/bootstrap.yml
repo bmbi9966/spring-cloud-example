@@ -1,5 +1,5 @@
 server:
-  port: 8202
+  port: 8301
 spring:
   profiles:
     active: profilesA
@@ -10,7 +10,7 @@ spring:
     name: ConfigClient
   cloud:
     config:
-      uri: http://localhost:8201/
+      uri: http://localhost:8202/
       label: master
       profile: dev
 ---
@@ -24,3 +24,21 @@ spring:
       label: master
       profile: dev
       name: SubDirectoryConfigCommon,SubDirectoryConfigClient
+---
+spring:
+  profiles: profilesC
+  application:
+    name: connectionConfigServerHA
+  cloud:
+    config:
+      label: master
+      profile: dev
+      name: SubDirectoryConfigCommon,SubDirectoryConfigClient
+      discovery:
+        enabled: true
+        service-id: ConfigServer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8887/eureka/,http://peer2:8888/eureka/,http://peer3:8889/eureka/
+
