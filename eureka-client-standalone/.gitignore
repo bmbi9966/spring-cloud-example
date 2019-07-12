@@ -34,3 +34,4 @@ build/
 /mvnw
 /HELP.md
 /.mvn/
+/.mvn/wrapper/maven-wrapper.jar

@@ -14,10 +14,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+
 
 ### NetBeans ###
 /nbproject/private/
@@ -33,4 +30,10 @@ build/
 /mvnw
 /HELP.md
 /.mvn/
+
 /.idea/
+/.idea/compiler.xml
+/.idea/misc.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
+/.idea/encodings.xml
