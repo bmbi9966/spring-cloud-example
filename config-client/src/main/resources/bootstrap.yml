@@ -2,7 +2,7 @@ server:
   port: 8301
 spring:
   profiles:
-    active: profilesA
+    active: profilesC
 ---
 spring:
   profiles: profilesA
@@ -20,7 +20,7 @@ spring:
     name: ConfigClientSubDirectory
   cloud:
     config:
-      uri: http://localhost:8201/
+      uri: http://localhost:8202/
       label: master
       profile: dev
       name: SubDirectoryConfigCommon,SubDirectoryConfigClient
