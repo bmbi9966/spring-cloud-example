@@ -18,3 +18,5 @@
     
 6.Spring Cloud 分布式配置中心入门 ，Spring Cloud Config（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/95603603">访问csdn /   <a/><a href="https://www.jianshu.com/p/ffc401850af9">访问简书<a/>
   
+7.Spring Cloud 分布式配置中心，配置文件子目录存储以及高可用 ，Spring Cloud Config（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/95940028">访问csdn /   <a/><a href="https://www.jianshu.com/p/d451d5ecb88a">访问简书<a/>
+  
