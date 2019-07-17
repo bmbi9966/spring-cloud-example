@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: hystrixClient8601
+  application:
+    name: hystrixClient
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+---
+server:
+  port: 8601
+spring:
+  profiles: hystrixClient8601
+---
+server:
+  port: 8602
+spring:
+  profiles: hystrixClient8602

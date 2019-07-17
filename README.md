@@ -20,3 +20,5 @@
   
 7.Spring Cloud 分布式配置中心，配置子目录存储以及高可用 ，Spring Cloud Config（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/95940028">访问csdn /   <a/><a href="https://www.jianshu.com/p/d451d5ecb88a">访问简书<a/>
   
+8.Spring Cloud服务容错，Hystrix（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/96280797">访问csdn /   <a/><a href="https://www.jianshu.com/p/a3d073495cb2">访问简书<a/>
+ 
