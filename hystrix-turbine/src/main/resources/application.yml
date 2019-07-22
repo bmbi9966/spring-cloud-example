@@ -4,6 +4,13 @@ spring:
 server:
   port: 8301
 turbine:
-  app-config: hystrixConsumer,hystrixClient
+  app-config: hystrixConsumer
   cluster-name-expression: "'default'"
+#  cluster-name-expression: metadata ['cluster']
   combine-host-port: true
+#  aggregator:
+#    cluster-config: consumer
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
