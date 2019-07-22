@@ -22,3 +22,5 @@
   
 8.Spring Cloud服务容错，Hystrix（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/96280797">访问csdn /   <a/><a href="https://www.jianshu.com/p/a3d073495cb2">访问简书<a/>
  
+9.Spring Cloud Hystrix熔断的监控面板，Dashboard详解（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/96475702">访问csdn /   <a/><a href="https://www.jianshu.com/p/88c582633696">访问简书<a/>
+ 
