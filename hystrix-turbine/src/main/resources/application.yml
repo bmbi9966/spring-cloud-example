@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: HystrixTurbine
+server:
+  port: 8301
+turbine:
+  app-config: hystrixConsumer,hystrixClient
+  cluster-name-expression: "'default'"
+  combine-host-port: true

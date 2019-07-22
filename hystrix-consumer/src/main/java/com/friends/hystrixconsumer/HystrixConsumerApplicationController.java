@@ -2,6 +2,8 @@ package com.friends.hystrixconsumer;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,7 +17,7 @@ public class HystrixConsumerApplicationController {
     HystrixConsumerApplicationServer hystrixConsumerApplicationServer;
 
     @GetMapping("getInstanceInfo")
-    public String  getInstanceInfo(){
+    public String  getInstanceInfoxx(){
        return hystrixConsumerApplicationServer.getInstanceInfo();
     }
 
@@ -29,6 +31,12 @@ public class HystrixConsumerApplicationController {
         return hystrixConsumerApplicationServer.hystrixHandleException(name);
     }
 
+    @Autowired
+    private FeignConsumerService feignConsumerService;
+    @GetMapping("getInstanceInfoFromFeign")
+    public String  getInstanceInfoFromFeign(){
+         return feignConsumerService.getInstanceInfoFromFeign();
+    }
 
   @Service
   class HystrixConsumerApplicationServer{

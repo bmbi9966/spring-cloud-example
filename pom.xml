@@ -25,6 +25,8 @@
         <module>config-server</module>
         <module>hystrix-client</module>
         <module>hystrix-consumer</module>
+        <module>hystrix-dashboard</module>
+        <module>hystrix-turbine</module>
     </modules>
 
     <properties>
