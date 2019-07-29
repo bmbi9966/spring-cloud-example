@@ -48,5 +48,6 @@ management:
 #    api:
 #      path: /api-d/**
 #      url: forward:/
-zuul:
-  sensitive-headers:
+#===========使所有cookie值都生效，向下传播
+#zuul:
+#  sensitive-headers:

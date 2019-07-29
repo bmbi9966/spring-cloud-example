@@ -26,4 +26,6 @@
  
 10.Spring Cloud Hystrix聚集监控信息，Turbine详解（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/96852649">访问csdn /   <a/><a href="https://www.jianshu.com/p/fea85d4255ce">访问简书<a/>
  
+11.Spring Cloud Zuul网关，route路由详解（Finchley版本）:  <a href="https://blog.csdn.net/NDKHBWH/article/details/97133344">访问csdn /   <a/><a href="https://www.jianshu.com/p/a6f21fff6c34">访问简书<a/>
+ 
 
