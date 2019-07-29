@@ -1,0 +1,52 @@
+spring:
+  application:
+    name: Zuul-Gateway
+server:
+  port: 9001
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#=======Url匹配
+#zuul:
+#  routes:
+#    user-defined-zuul-a:
+#      path: /zuul-api-a/**
+#      url: http://localhost:9002
+#    user-defined-zuul-b:
+#      path: /zuul-api-b/**
+#      url: http://localhost:9003
+#=======serviceId匹配
+#zuul:
+#  routes:
+#    user-defined-zuul-c:
+#      path: /zuul-api-c/**
+#      serviceId : Zuul-Consumer
+#=======serviceId匹配简写
+#zuul:
+#  routes:
+#      Zuul-Consumer: /zuul-api-c/**
+#========忽略指定微服务代理
+#zuul:
+#  ignoredServices: 'zuul-gateway'
+#========测试路由加载顺序
+#zuul:
+#  routes:
+#      Zuul-Consumer: /zuul-api-c/**
+#      Zuul-Consumer2: /zuul-api-c/a/**
+#===========为所有路由添加前缀
+#zuul:
+#  prefix: /api
+#==========本地跳转
+#zuul:
+#  routes:
+#    api:
+#      path: /api-d/**
+#      url: forward:/
+zuul:
+  sensitive-headers:

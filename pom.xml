@@ -27,6 +27,7 @@
         <module>hystrix-consumer</module>
         <module>hystrix-dashboard</module>
         <module>hystrix-turbine</module>
+        <module>zuul-gateway</module>
     </modules>
 
     <properties>
